@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public TMP_Text CounterText;
-    double totalBalls = 0;
+    public int totalBalls = 0;
     public static GameManager instance;
     void Awake()
     {
