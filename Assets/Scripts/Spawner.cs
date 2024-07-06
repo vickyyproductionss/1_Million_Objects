@@ -15,13 +15,13 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(1);
         GameObject ball1 = Instantiate(BallPrefab);
         GameManager.instance.AddCount();
-        Vector3 pos1 = IndexToPosition(GameManager.instance.totalBalls);
-        ball1.transform.position = pos1;
+        //Vector3 pos1 = IndexToPosition(GameManager.instance.totalBalls);
+        //ball1.transform.position = pos1;
         yield return new WaitForSeconds(1);
         GameObject ball2 = Instantiate(BallPrefab);
         GameManager.instance.AddCount();
-        Vector3 pos2 = IndexToPosition(GameManager.instance.totalBalls);
-        ball2.transform.position = pos2;
+        //Vector3 pos2 = IndexToPosition(GameManager.instance.totalBalls);
+        //ball2.transform.position = pos2;
     }
     public int TotalPositions = 10000; // Total number of positions
     public Vector3 GridSize = new Vector3(1000, 0, 1000); // Size of the grid in x and z dimensions
